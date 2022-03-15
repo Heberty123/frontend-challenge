@@ -83,65 +83,57 @@
 }
 
 
-
-.power-button{
-    width: 5.8rem;
-    height: 2.6rem;
-    background-color: aquamarine;
-    border-radius: 32px;
-
+.container-night{
+    width: 4.4rem;
+    height: 2.5rem;
+    background-color: var(--background-input);
+    border-radius: 20px;
 }
 
-#powerbutton{
+#input-power{
     display: none;
 }
 
-.toggle {
-    width: 2.8rem;
-    height: 2.4rem;
+#label-night{
+    background-color: var(--background-input-checkbox);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
     display: block;
     cursor: pointer;
     position: relative;
-    top: 1.5px;
+    top: 4px;
     left: 4px;
-    z-index: 1;
-    background-color: var(--title-blue);
-    border: 1px solid var(--title-blue);
-    border-radius: 32px;
-    box-shadow: none;
-    box-sizing: border-box;
-    transition: 0.3s cubic-bezier(0.895, 0.07, 0.685, 0.68);
+    transition: .3s;
 }
 
-.toggle::before {
-    content: 'On';
-    color: #ffffff;
-    position: absolute;
+#label-night::before{
+    content: 'off';
     text-transform: uppercase;
-    font-size: 0;
-    top: 12px;
-    left: 12px; 
-}
-
-.toggle::after {
-    content: 'Off';
-    color: rgb(153, 153, 153);
+    font-size: 10px;
     position: absolute;
+    top: 10px;
+    left: 4.5px;
+}
+
+#label-night::after{
+    content: 'on';
+    font-size: 0px;
     text-transform: uppercase;
-    text-transform: 14px;
-    top: 12px;
-    left: 6px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
 }
 
-#powerbutton:checked + .toggle {
-    left: 2.7rem;
-    background-color: #07bdac;
+#input-power:checked + #label-night{
+    left: 35.5px;
+    transition: 3.s;
 }
 
-#powerbutton:checked + .toggle::after {
-    font-size: 0;
+#input-power:checked + #label-night::before{
+    font-size: 0px;
 }
 
-#powerbutton:checked + .toggle::before{
-    font-size: 14px;
+#input-power:checked + #label-night::after{
+    font-size: 10px;
 }
