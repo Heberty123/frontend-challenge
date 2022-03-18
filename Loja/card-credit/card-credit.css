@@ -1,5 +1,6 @@
 .container-credit-card{
-    margin-top: 40px;
+    margin-top: 50px;
+    padding: 0px 20px;
 }
 
 .central-grid-card{
@@ -7,12 +8,25 @@
     height: 450px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 400px 1fr;
-    margin-bottom: 1000px;
+    grid-template-columns: 500px 1fr;
+    position: relative;
 }
 
+@media screen and (max-width: 1180px){
+    .central-grid-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 450px;
+    }
+    
+}
+
+
+
 .informacoes-card{
-    background-color: aquamarine;
+    background: rgba(92, 75, 75, 0.12);
+    backdrop-filter: blur(7.3px);
+    opacity: 0.9;
+    border-radius: 6px;
 }
 
 .box-credit-card{
@@ -20,11 +34,12 @@
 }
 
 .card{
-    width: 60%;
+    width: 475px;
     height: 58%;
+    margin: 0px;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(141, 146, 146);
+    background-image: linear-gradient(30deg, #d1917c, #74BDCB);
     box-sizing: border-box;
     position: relative;
     top: 10px;
@@ -95,7 +110,7 @@
     width: 20%;
     height: 25%;
     right: 10px;
-    bottom: 20px;
+    bottom: 10px;
 }
 
 .anaconda img{
@@ -106,12 +121,12 @@
 
 .title-card-sombra{
     position: absolute;
-    font-size: 700%;
+    font-size: 600%;
     color: #9e9797;
     font-weight: 700;
     z-index: -1;
     right: 10px;
-    bottom: 20px;
+    bottom: 75px;
 }
 
 
@@ -163,11 +178,11 @@
 
 
 .card-black{
-    width: 58%;
+    width: 465px;
     height: 56%;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(60, 136, 89);
+    background-image: linear-gradient(30deg, #cf7a5d, #509cac);
     box-sizing: border-box;
     position: relative;
     top: -100px;
@@ -202,7 +217,7 @@
     position: absolute;
     width: 50%;
     height: 50px;
-    background-image: url("../imagem/campo-codigos.jpeg");
+    background-image: url("../imagem/imagens-index/campo-codigos.jpeg");
     top: 90px;
     left: 50px;
 }

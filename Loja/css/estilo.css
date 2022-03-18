@@ -3,3 +3,8 @@
 @import "header.css";
 @import "../principal/index.css";
 @import "../card-credit/card-credit.css";
+@import "../listas-index/lista-index.css";
+@import "../session/session.css";
+@import "../produto/produto.css";
+@import "../Produtos-home/produtos-home.css";
+@import "../css/footer.css";

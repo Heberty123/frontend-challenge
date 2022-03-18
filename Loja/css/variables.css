@@ -1,6 +1,23 @@
 :root{
     --title-blue: #2A7AE4;
+    --background-fundo: #E5E5E5;
     --background-input: #F5F5F5;
+    --shadow-input-login: #C8C8C8;
     --background-input-checkbox: #649ae0;
     --title-white: #FFFFFF;
+
+
+    --title-item-produto: #464646;
+    --background-azul-footer: #EAF2FD;
+    --background-white-footer: #FFFFFF;
+    --text-sessao-input: #A2A2A2;
+}
+
+body{
+    background-color: var(--background-fundo);
+}
+
+.margin-auto{
+    max-width: 1200px;
+    margin: 0 auto;
 }

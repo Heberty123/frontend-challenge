@@ -1,12 +1,14 @@
 .header{
     max-height: 115px;
     padding: 30px 0px;
+    background-color: var(--background-white-footer);
 }
 
 .header-container{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0px 20px;
     gap: 30px;
 
 }
@@ -36,38 +38,109 @@
     width: 100%;
     max-width: 393px;
     height: 40px;
+    background-color: var(--background-input);
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.pesquisa-container::after{
-    content: '';
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-image: url("../imagem/Lupa_pesquisa.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    position: absolute;
-    right: 10px;
-}
 
 .input-pesquisa{
     border: none;
     width: 100%;
+    padding: 8px 50px 10px 20px;
     background-color: var(--background-input);
-    padding: 8px 60px 10px 20px;
     border-radius: 20px;
+    border: var(--background-input);
     box-sizing: border-box;
 }
+
+.lupa-pesquisa{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
 
 .button-night{
     width: 10rem;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .button-night{
+        display: none;
+    }
+
+    .header-container{
+        gap: 20px;
+    }
+
+    .header .flex-final{
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    
+    .pesquisa-container{
+        background-color: #FFFFFF;
+        width: 20px;
+
+    }
+    
+    .input-pesquisa{
+        display: none;
+    }
+
+    .header-container{
+        gap: 20px;
+    }
+
+
+    .header .flex-final{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        gap: 20px;
+        
+    }
+
+    .lupa-pesquisa{
+        right: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .header-container{
+        gap: 8%;
+    }
+
+
+    .header-container > div > h1{
+        font-size: 1.3rem;
+    }
+
+    .header-container > div > img{
+        width: 40px;
+    }
+
+    .header-container > div > a{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    .header-container > div img{
+        display: none;
+    }
 }
 
 .button-night img{

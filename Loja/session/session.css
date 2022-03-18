@@ -1,0 +1,50 @@
+.container-principal-session{
+    padding: 0px 20px;
+}
+
+.container-login{
+    max-width: 423px;
+    margin: 100px auto 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-login{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--title-item-produto);
+    font-size: 1.2rem;
+}
+
+.input-email, .input-senha{
+    width: 100%;
+    background-color: var;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    color: var(--text-sessao-input);
+    font-size: 1rem;
+    padding: 0px 15px;
+    height: 63px;
+    border: none;
+}
+
+
+.input-button-login{
+    border: none;
+    background-color: var(--title-blue);
+    color: var(--title-white);
+    font-size: 1.2rem;
+    height: 62px;
+}
+
+@media screen and (max-width: 768px){
+    .container-login{
+        align-items: center;
+    }
+    
+    .input-button-login{
+        width: 109px;
+        height: 40px;
+    }
+}
