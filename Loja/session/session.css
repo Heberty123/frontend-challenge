@@ -19,7 +19,7 @@
 
 .input-email, .input-senha{
     width: 100%;
-    background-color: var;
+    background-color: var(--title-white);
     box-sizing: border-box;
     box-shadow: 0px 2px 0px var(--shadow-input-login);
     color: var(--text-sessao-input);
@@ -33,7 +33,7 @@
 .input-button-login{
     border: none;
     background-color: var(--title-blue);
-    color: var(--title-white);
+    color: var(--title-preto);
     font-size: 1.2rem;
     height: 62px;
 }

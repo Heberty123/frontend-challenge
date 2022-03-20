@@ -30,18 +30,18 @@
 
 .article-promocoes > h2{
     font-size: 3rem;
-    color: var(--title-white);
+    color: var(--always-white);
 }
 
 .article-promocoes > p{
     font-size: 1.4rem;
-    color: var(--title-white);
+    color: var(--always-white);
 }
 
 .article-promocoes > a{
     font-size: 1.2rem;
     padding: 16px;
-    color: var(--title-white);
+    color: var(--title-preto);
     background-color: var(--title-blue);
     max-width: 130px;
     text-align: center;

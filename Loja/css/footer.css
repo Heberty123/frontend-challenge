@@ -36,6 +36,7 @@
     display: flex;
     height: 50px;
     gap: 10px;
+    color: var(--title-preto);
     align-items: center;
     margin-bottom: 10px;
     font-size: 1.6rem;
@@ -49,6 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: var(--title-preto);
 }
 
 .formulario-contato{
@@ -75,6 +77,7 @@
     height: 100%;
     padding: 20px 10px 5px 12px;
     border: none;
+    background-color: var(--back-input-footer);
     box-shadow: 0px 2px 0px var(--shadow-input-login);
     box-sizing: border-box;
     font-size: .9rem;
@@ -102,6 +105,7 @@
     max-height: 100px;
     padding: 40px 10px 10px 12px;
     border: none;
+    background-color: var(--back-input-footer);
     box-shadow: 0px 2px 0px var(--shadow-input-login);
     box-sizing: border-box;
 }
@@ -121,7 +125,7 @@
     min-width: 150px;
     height: 40px;
     background-color: var(--title-blue);
-    color: var(--title-white);
+    color: var(--title-preto);
     border: none;
 }
 

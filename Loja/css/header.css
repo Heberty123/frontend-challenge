@@ -22,7 +22,9 @@
 
 .header-container > div > h1{
     font-size: 1.6rem;
+    color: var(--title-preto);
 }
+
 
 .blue{
     color: var(--title-blue);
@@ -58,6 +60,7 @@
     width: 100%;
     min-width: 233px;
     padding: 8px 50px 10px 20px;
+    color: var(--title-preto);
     background-color: var(--background-input);
     border-radius: 20px;
     border: var(--background-input);
