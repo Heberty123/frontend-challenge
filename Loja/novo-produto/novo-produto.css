@@ -1,0 +1,202 @@
+.main-principal-novo-produto{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-novo-produto{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 15px 50px;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.form-novo-produto h1{
+    grid-column: span 2;
+    color: var(--title-item-produto);
+    font-size: 2rem;
+}
+
+.input-novo-produto-draggable{
+    width: 100%;   /*  ARRUMA AQUI  */
+    height: 200px;
+    padding: 20px;
+    background-color: var(--title-white);
+    border: 2px dashed var(--shadow-input-login);
+    border-radius: 4px;
+    display: flex;
+    cursor: pointer;
+    color: var(--title-title-dagg);
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.drop-zone__prompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.drop-zone__thumb{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgb(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+}
+
+.drop-zone__prompt img{
+    width: 17%;
+}
+
+.drop-zone--over{
+    border-style: solid;
+}
+
+.drop-zone__input{
+    display: none;
+}
+
+
+.button-procura-produto{
+    width: 100%;
+    height: 40px;
+    font-size: .8rem;
+    padding: 10px 10px;
+    text-align: center;
+    color: var(--title-blue);
+    border: 1px solid var(--title-blue);
+    background-color: var(--background-fundo);
+    box-sizing: border-box;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+.button-procura-produto::before{
+    content: 'ou';
+    display: inline-block;
+    color: var(--title-item-produto);
+    font-size: 1.1rem;
+    position: absolute;
+    left: -36px;
+    top: 10px;
+}
+
+.novo-nome-produto, .novo-preco-produto{
+    width: 100%;
+    height: 56px;
+    grid-column: span 2;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+}
+
+.novo-nome-produto input, .novo-preco-produto input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    padding: 25px 12px 5px 15px;
+    z-index: -1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.novo-nome-produto input::placeholder, .novo-preco-produto input::placeholder{
+    color: var(--title-item-produto);
+}
+
+
+.novo-nome-produto::before{
+    content: 'Nome do produto';
+    display: inline-block;
+    font-size: .8rem;
+    color: var(--text-sessao-input);
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.novo-preco-produto::before{
+    content: 'Preço do produto';
+    display: inline-block;
+    font-size: .8rem;
+    color: var(--text-sessao-input);
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.novo-descricao-produto{
+    width: 100%;
+    height: 82px;
+    grid-column: span 2;
+    border-radius: 4px;
+    position: relative;
+}
+
+.novo-descricao-produto::before{
+    content: 'Descrição do produto';
+    display: inline-block;
+    color: var(--text-sessao-input);
+    font-size: .9rem;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.novo-descricao-produto input{
+    width: 100%;
+    height: 100%;
+    padding: 25px 10px 10px 12px;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.submit-novo-produto{
+    width: 100%;
+    padding: 12px 0px;
+    grid-column: span 2;
+    border: none;
+    text-align: center;
+    background-color: var(--title-blue);
+    color: var(--background-white-footer);
+}
+
+@media screen and (max-width: 495px){
+    .form-novo-produto{
+        grid-template-columns: 1fr;
+        gap: 20px 0px;
+    }
+
+    .input-novo-produto-draggable{
+        grid-column: span 2;
+    }
+
+    .button-procura-produto{
+        display: none;
+    }
+}

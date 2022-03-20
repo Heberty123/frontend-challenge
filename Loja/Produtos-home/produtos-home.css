@@ -17,7 +17,8 @@
 }
 
 .adicionar-produto{
-    padding: 20px;
+    padding: 18px 20px;
+    text-decoration: none;
     background-color: var(--title-blue);
     color: var(--title-white);
     border: none;
@@ -40,6 +41,42 @@
     gap: 10px;
     width: 100%;
     max-width: 176px;
+    position: relative;
+}
+
+.item-produto::after{
+    content: '';
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    min-width: 13.7px;
+    min-height: 21.37px;
+    background-image: url("../imagem/imagens-index/lapis.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 4px;
+    right: 5%;
+}
+
+.item-produto::before{
+    content: '';
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    background-image: url("../imagem/imagens-index/lixo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 5px;
+    right: 25%;
+}
+
+
+.item-produto::after, .item-produto::before{
+    cursor: pointer;
 }
 
 .item-produto img{
@@ -58,6 +95,8 @@
     text-decoration: none;
     color: var(--title-item-produto);
 }
+
+
 
 @media screen and (max-width: 768px){
     .lista-produtos{

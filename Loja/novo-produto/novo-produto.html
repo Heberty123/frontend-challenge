@@ -30,22 +30,42 @@
                 </div>
 
         
-                <a href="">Login</a>
+                <a href="../session/session.html">Menu administrador</a>
             </div>
         </div>
     </header>
 
-    <main class="container-principal-session">
 
-        <form action="" class="container-login">
-            <h2 class="title-login">Iniciar Sessão</h2>
-            <input class="input-email" type="text" value="escreva seu email">
-            <input class="input-senha" type="text" value="escreva sua senha">
-            <input class="input-button-login" type="submit" value="Entrar">
+    <main class="main-principal-novo-produto">
+        <form class="form-novo-produto">
+            <h1>Adicionar novo produto</h1>
+
+            <div class="input-novo-produto-draggable">
+                <span class="drop-zone__prompt"><img src="../imagem/imagens-index/img-dagg.svg" alt="">Drop file here or click to upload</span>
+
+
+            <!--<div class="drop-zone__thumb" data-label="myfile.txt"></div>--> 
+
+
+                <input type="file" name="myFile" class="drop-zone__input">
+            </div>
+
+            <button class="button-procura-produto">Procure no seu computador</button>
+            <div class="novo-nome-produto">
+                <input type="text" placeholder="Produto XYC">
+            </div>
+            <div class="novo-preco-produto">
+                <input type="text" placeholder="R$ 60,00">
+            </div>
+            <div class="novo-descricao-produto">
+                <input type="text">
+            </div>
+            <input class="submit-novo-produto" type="text" value="Adicionar produto">
         </form>
     </main>
-
     
+
+
     <footer class="rodape">
 
         <div class="margin-auto">
@@ -81,5 +101,7 @@
         </section>
 
     </footer>
+
+    <script src="novo-produto.js"></script>
 </body>
 </html>

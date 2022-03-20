@@ -11,6 +11,13 @@
     --background-azul-footer: #EAF2FD;
     --background-white-footer: #FFFFFF;
     --text-sessao-input: #A2A2A2;
+    --title-title-dagg: #6B6B6B;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --background-fundo: #8a5e5e;
+    }
 }
 
 body{

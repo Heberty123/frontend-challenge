@@ -13,6 +13,7 @@
 
 }
 
+
 .header-container > div{
     display: flex;
     gap: 4px;
@@ -25,6 +26,12 @@
 
 .blue{
     color: var(--title-blue);
+}
+
+@media screen and (max-width: 350px){
+    .header-container > div img{
+        display: none;
+    }
 }
 
 .flex-final{
@@ -49,6 +56,7 @@
 .input-pesquisa{
     border: none;
     width: 100%;
+    min-width: 233px;
     padding: 8px 50px 10px 20px;
     background-color: var(--background-input);
     border-radius: 20px;
@@ -82,43 +90,44 @@
     }
 
     .header .flex-final{
-        gap: 70px;
+        gap: 20px;
     }
 }
 
-@media screen and (max-width: 650px){
-    
-    .pesquisa-container{
-        background-color: #FFFFFF;
-        width: 20px;
-
+@media screen and (max-width: 600px){
+    .flex-final{
+        flex-direction: row-reverse;
     }
-    
+
     .input-pesquisa{
         display: none;
     }
 
-    .header-container{
-        gap: 20px;
-    }
-
-
-    .header .flex-final{
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        gap: 20px;
-        
-    }
-
     .lupa-pesquisa{
-        right: 0 !important;
+        position: static;
+    }
+
+    .pesquisa-container{
+        width: auto;
+        background-color: transparent;
+    }
+
+    .flex-final a{
+        width: 20%;
+        text-align: center;
+    }
+
+    .header-container{
+        gap: 50px;
     }
 
 }
 
+
+
 @media screen and (max-width: 400px){
     .header-container{
-        gap: 8%;
+        gap: 20px;
     }
 
 
@@ -133,6 +142,9 @@
     .header-container > div > a{
         font-size: 1rem;
         padding: 10px 15px;
+        width: 100%;
+        min-width: 70px;
+        box-sizing: border-box;
     }
 
 }
@@ -150,6 +162,7 @@
 
 .flex-final a{
     padding: 15px 40px;
+    cursor: pointer;
     text-decoration: none;
     color: var(--title-blue);
     border: 1px solid var(--title-blue);

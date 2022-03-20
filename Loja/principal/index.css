@@ -39,8 +39,9 @@
 }
 
 .article-promocoes > a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 16px;
+    color: var(--title-white);
     background-color: var(--title-blue);
     max-width: 130px;
     text-align: center;

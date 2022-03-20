@@ -18,6 +18,8 @@
 .ver-tudo{
     display: flex;
     width: auto;
+    cursor: pointer;
+    text-decoration: none;
     color: var(--title-blue);
     font-size: 1rem;
     gap: 10px;

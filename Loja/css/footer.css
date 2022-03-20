@@ -57,19 +57,72 @@
     gap: 15px;
 }
 
+.formulario-contato h2{
+    font-size: 1.2rem;
+    color: var(--title-item-produto);
+    
+}
+
 .input-contato-nome{
     width: 100%;
-    height: 40px;
+    height: 52px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.input-contato-nome input{
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px 5px 12px;
+    border: none;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    box-sizing: border-box;
+    font-size: .9rem;
+}
+
+.input-contato-nome::before{
+    content: 'Nome';
+    display: inline-block;
+    color: var(--text-sessao-input);
+    font-size: 1rem;
+    position: absolute;
+    left: 12px;
+    top: 5px;
 }
 
 .input-mensagem{
     height: 100px;
+    position: relative;
+}
+
+.input-mensagem textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100px;
+    padding: 40px 10px 10px 12px;
+    border: none;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    box-sizing: border-box;
+}
+
+.input-mensagem::before{
+    content: 'Escreva sua mensagem';
+    display: inline-block;
+    color: var(--text-sessao-input);
+    font-size: 1rem;
+    position: absolute;
+    left: 12px;
+    top: 17px;
 }
 
 .button-submit-contato{
     width: 30%;
+    min-width: 150px;
     height: 40px;
+    background-color: var(--title-blue);
+    color: var(--title-white);
+    border: none;
 }
 
 .back-direitos-autorais{
@@ -78,6 +131,7 @@
     text-align: center;
     padding: 30px 0px;
 }
+
 
 @media screen and (max-width: 450px){
     .contato{
