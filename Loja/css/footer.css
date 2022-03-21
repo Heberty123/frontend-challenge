@@ -1,4 +1,5 @@
 .rodape{
+    font-family: var(--font-roboto);
     background-color: var(--background-azul-footer);
 }
 

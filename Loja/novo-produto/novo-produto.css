@@ -189,6 +189,21 @@
     color: var(--title-preto);
 }
 
+@media screen and (max-width: 1060px){
+    #menu-administrador{
+        font-size: .9rem;
+        padding: 15px 20px;
+        min-width: 100px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header > div h1{
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 495px){
     .form-novo-produto{
         grid-template-columns: 1fr;
@@ -201,5 +216,18 @@
 
     .button-procura-produto{
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    #lupa-produto-novo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 310px){
+    #menu-administrador{
+        padding: 10px 20px;
     }
 }

@@ -24,6 +24,7 @@ function forNight(){
     variavel.style.setProperty('--shadow-input-login', '#5e5050');
     variavel.style.setProperty('--background-input-checkbox', '#649ae0');
     variavel.style.setProperty('--title-white', '#504b4b');
+    variavel.style.setProperty('--title-preto', '#FFFFFF');
     variavel.style.setProperty('--title-item-produto', '#e4d7d7');
     variavel.style.setProperty('--background-azul-footer', '#272e36');
     variavel.style.setProperty('--back-input-footer', '#4d3e3e')

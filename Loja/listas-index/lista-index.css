@@ -33,6 +33,7 @@
 .lista{
     list-style: none;
     display: grid;
+    font-family: var(--font-montserrat);
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     margin-bottom: 40px;
@@ -69,6 +70,7 @@
 @media screen and (max-width: 768px){
     .lista{
         grid-template-columns: repeat(4, 1fr);
+        font-size: .8rem;
     }
 
     .item:nth-child(4n+2){
@@ -88,4 +90,20 @@
     .item{
         max-width: 100%;
     }
+}
+
+@media screen and (max-width: 350px){
+    .title-starwars{
+        font-size: 1.4rem;
+    }
+
+    .ver-tudo{
+        font-size: 1rem;
+    }
+
+    .lista{
+        font-size: .8rem;
+    }
+
+    
 }
