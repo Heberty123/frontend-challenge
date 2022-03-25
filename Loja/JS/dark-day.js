@@ -1,7 +1,6 @@
 let variavel = document.querySelector(':root');
-var imgScheme = document.querySelector('.imgModeScheme');
-var input_night = document.querySelector("#input-power");
-
+var button = document.querySelector(".button-night");
+var box_night = document.querySelector(".box-night");
 
 
 
@@ -49,104 +48,35 @@ function forLight(){
     variavel.style.setProperty('--title-title-dagg', '#6B6B6B');
 }
 
+button.addEventListener('click', e => {
+    button.classList.toggle("night-click");
+    box_night.classList.toggle("box-night-back");
 
-
-input_night.addEventListener('click', e => {
-    if(input_night.checked==true){
-
-
-        input_night.checked = true;
-        imgScheme.src = "../imagem/imagens-index/owl-svgrepo-com.svg"
-        imgScheme.alt = "Coruja";
-        localStorage.setItem('night', true); 
-        
-      
-       forNight();
-
-    }else{
-
-        
-        input_night.checked = false;
-        imgScheme.src = "../imagem/imagens-index/sunflower-svgrepo-com (1).svg";
-        imgScheme.alt = "Girassol";
-        localStorage.setItem('night', false);   
-
+    if(button.classList.contains("night-click")){
+        localStorage.setItem("ativo-morning", "false");
+        forNight();
+    }
+    else{
+        localStorage.setItem("ativo-morning", "true");
         forLight();
     }
 });
 
+var teste = localStorage.getItem("ativo-morning");
 
-
-/*
-window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-    console.log(`changed to ${e.matches ? "dark" : "light"} mode`)
-    if(e.matches){
-        console.log("Mudou para noite");
-        console.log(e.matches);    
-        input_night.checked = true;
-        forNight();
-        
-
-    }
-    else{
-        console.log("Mudou para dia");
-        console.log(e.matches);  
-        input_night.checked = false;
-        forLight();
-    }
-  });
-
-*/
+if(teste == "true"){
+    console.log("Depois do reload ficou dia");
+    button.classList.remove("night-click");
+    box_night.classList.remove("box-night-back");
+    forLight();
+}
+else if(teste == "false"){
+    console.log("Depois do reload ficou noite");
+    button.classList.add("night-click");
+    box_night.classList.add("box-night-back");
+    forNight();
+}
 
 //var checked = JSON.parse(localStorage.getItem(night));
 
-console.log(localStorage);
-
-if(localStorage.getItem('night') == null){
-    console.log("vazio");
-}
-else{
-
-    console.log("Encontrado");
-    let checked = JSON.parse(localStorage.getItem('night'));
-    input_night.checked = checked;
-    if(checked){
-        forNight();
-        imgScheme.src = "../imagem/imagens-index/owl-svgrepo-com.svg"
-        imgScheme.alt = "Coruja";
-        window.history.pushState({'input_night': checked}, 'night', new URL(window.location));
-        console.log(window.history);
-    }
-    else{
-        forLight();
-        imgScheme.src = "../imagem/imagens-index/sunflower-svgrepo-com (1).svg";
-        imgScheme.alt = "Girassol";
-        window.history.pushState({'input_night': checked}, 'night', new URL(window.location));
-        console.log(window.history);
-    }
-}
-
-let checkehistory = window.history.state;
-
-if(checkehistory.input_night){
-    input_night.checked = true;
-    console.log("Foiiii truee");
-}
-else{
-    input_night.checked = false;
-    
-    console.log("Foiiiii falsee");
-}
-
-
-/*
-
-if(checked){
-    input_night.checked = true;
-}
-else{
-    input_night.checked = false;
-}
-
-*/
 

@@ -76,8 +76,8 @@
 }
 
 
-.button-night{
-    width: 10rem;
+.container-night{
+    width: auto;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -171,9 +171,9 @@
     }
 }
 
-.button-night img{
-    width: 3.4rem;
-    height: 3rem;
+.button-night{
+    width: auto;
+    height: auto;
 }
 
 .flex-final a{
@@ -185,57 +185,50 @@
 }
 
 
-.container-night{
-    width: 4.4rem;
-    height: 2.5rem;
-    background-color: var(--background-input);
-    border-radius: 20px;
-}
-
-#input-power{
-    display: none;
-}
-
-#label-night{
-    background-color: var(--background-input-checkbox);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    display: block;
-    cursor: pointer;
+.box-night{
+    background-image: url("../imagem/imagens-index/ocean.jpeg");
+    width: 70px;
+    height: 35px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     position: relative;
-    top: 4px;
-    left: 4px;
-    transition: .3s;
+    transition: .2s;
 }
 
-#label-night::before{
-    content: 'off';
-    text-transform: uppercase;
-    font-size: 10px;
+.box-night-back{
+    background-image: url("../imagem/imagens-index/night.jpeg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+.button-night{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
     position: absolute;
-    top: 10px;
-    left: 4.5px;
+    top: 3px;
+    left: 5px;
+    transition: .2s;
+    background-image: url("../imagem/imagens-index/sun-svgrepo-com\ .svg ");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#label-night::after{
-    content: 'on';
-    font-size: 0px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 10px;
-    left: 8px;
+.night-click{
+    top: 3px;
+    left: 38px;
+    transition: .2s;
+    background-image: url("../imagem/imagens-index/moon-svgrepo-com.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#input-power:checked + #label-night{
-    left: 35.5px;
-    transition: 3.s;
-}
-
-#input-power:checked + #label-night::before{
-    font-size: 0px;
-}
-
-#input-power:checked + #label-night::after{
-    font-size: 10px;
-}

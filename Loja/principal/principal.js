@@ -9,3 +9,5 @@ if(logado){
 else{
     administrador.innerText = "Login";
 }
+
+
