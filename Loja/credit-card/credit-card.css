@@ -1,0 +1,166 @@
+.container-credit-card{
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 30px auto 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-card{
+    background-image: url("../credit-card/imagem/woman-tecnology.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+
+.box-informacoes-card{
+    padding: 35px 10px 10px 10px;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgba(0, 195, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    position: relative;
+}
+
+.box-informacoes-card h1{
+    color: #FFFFFF;
+}
+
+.box-informacoes-card::before{
+    content: '';
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-image: url("../credit-card/imagem/OSXButtons.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: -30px;
+    top: -40px;
+}
+
+.design-credit-card{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url("../credit-card/imagem/fundo-purple.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1{
+    width: 340px;
+    position: absolute;
+    right: 30vw;
+}
+
+.circle2{
+    width: 440px;
+    position: absolute;
+    left: 25%;
+}
+
+.credit-card{
+    width: 100%;
+    height: 220px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    position: relative;
+    transition: .2s;
+}
+
+
+.logo-credit-card{
+    display: flex;
+    color: #FFFFFF;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    align-items: center;
+}
+
+.visa-card{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -23px;
+    right: 7px;
+}
+
+.chip-credit{
+    width: 40px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.number-card{
+    position: absolute;
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+    top: 130px;
+    left: 20px;
+}
+
+.name-card-people{
+    position: absolute;
+    color: #FFFFFF;
+    top: 180px;
+    left: 70px;
+}
+
+.data-card{
+    position: absolute;
+    color: #FFFFFF;
+    top: 130px;
+    left: 200px;
+}
+
+.card-comedor{
+    width: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 75px;
+}
+
+.game-controller{
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    bottom: 5px;
+}
+
+.video-gamer-img{
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    bottom: 5px;
+    right: 6px;
+}
