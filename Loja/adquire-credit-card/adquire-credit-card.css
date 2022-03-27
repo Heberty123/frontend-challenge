@@ -1,0 +1,50 @@
+.container-adquire-card{
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../adquire-credit-card/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.adquire-credit-card{
+    background-image: url("../adquire-credit-card/imagem/woman-binoculos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(105, 82, 82, 0.65);
+    position: absolute;
+    top: 40px;
+}
+
+.form-credit-card{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 120px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.label-card-number{
+    grid-column: span 2;
+}
+
+.label-card-number input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.label-card-nome{
+    grid-column: span 2;
+}
