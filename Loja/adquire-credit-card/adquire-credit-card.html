@@ -45,25 +45,51 @@
                 <img class="chip-credit" src="../credit-card/imagem/credit-card-chip-svgrepo-com.svg.svg" alt="">
                 <h2 class="number-card">1111 1111 1111 1111</h2>
                 <h2 class="name-card-people">name</h2>
-                <h2 class="data-card">12/12</h2>
+                <h2 class="data-card data-card-adquire"><span class="campo-data-day">12</span>/<span class="campo-data-month">12</span></h2>
                 <img class="card-comedor" src="../credit-card/imagem/comedor.svg" alt="">
                 <img class="game-controller" src="../credit-card/imagem/video-game-controller.svg" alt="">
                 <img class="video-gamer-img" src="../credit-card/imagem/video-game1.svg" alt="">
             </div>
 
+            <div class="credit-card adquire-credit-card credit-card-back">
+                <div class="faixa-preta-card"></div>
+
+                <p class="titulo-card-back-cvv">cvv</p>
+                <div class="input-card-back-cvv"></div>
+                <img class="card-back-visa" src="imagem/visa-back.svg" alt="">
+            </div>
+        
+
             <section class="form-credit-card">
-                <label class="label-card-number" for="number">Number <input id="number" type="text"></label>
+
+                <div class="card-campo-nome">
+                    <label for="nome">Nome </label>
+                    <input id="nome" type="text" placeholder="Heberty Guelfi do Prado">
+                </div>
+
+                <div class="card-campo-number">
+                    <label for="number">Number </label>
+                    <input id="number" type="text" placeholder="1111 1111 1111 1111">
+                </div>
                 
+                <div class="card-campo-data-day">
+                    <label for="day">dia</label>
+                    <input id="day" type="text" placeholder="12">
+                </div>
 
-                <label class="label-card-nome" for="nome">Nome <input id="nome" type="text"></label>
+                <div class="card-campo-data-month">
+                    <label for="month">Mês</label>
+                    <input id="month" type="text" placeholder="12">
+                </div>
                 
+                <div class="card-campo-csv">
+                    <label for="csv">CSV</label>
+                    <input id="csv" type="text" placeholder="985">
+                </div>
 
-                <label class="label-card-data" for="data">Data <input id="data" type="text"></label>
-                
 
-                <label class="label-card-csv" for="csv">CSV <input id="csv" type="text"></label>
 
-                <input type="submit" value="submit">
+                <input class="form-card-submit" type="submit" value="submit">
                 
             </section>
 
