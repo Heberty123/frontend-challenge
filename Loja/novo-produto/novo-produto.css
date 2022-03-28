@@ -189,6 +189,59 @@
     color: var(--title-preto);
 }
 
+.modal-login-novoPro{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.mostrar{
+    display: flex;
+}
+
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-novo-produto{
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: grid;
+    background-color: white;
+    animation: modal .3s;
+    position: relative;
+}
+
+.modal-novo-produto img{
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    top: -17px;
+    right: -17px;
+}
+
 @media screen and (max-width: 1060px){
     #menu-administrador{
         font-size: .9rem;

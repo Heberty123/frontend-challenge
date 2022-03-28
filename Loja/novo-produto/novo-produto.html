@@ -31,14 +31,14 @@
                 </div>
 
         
-                <a id="menu-administrador logado" href="../session/session.html">Menu administrador</a>
+                <a id="logado" href="../session/session.html">Menu administrador</a>
             </div>
         </div>
     </header>
 
 
     <main class="main-principal-novo-produto">
-        <form class="form-novo-produto">
+        <form class="form-novo-produto" onsubmit="submitFormProduto(event)">
             <h1>Adicionar novo produto</h1>
 
             <div class="input-novo-produto-draggable">
@@ -61,11 +61,21 @@
             <div class="novo-descricao-produto">
                 <input type="text">
             </div>
-            <input class="submit-novo-produto" type="text" value="Adicionar produto">
+            <input class="submit-novo-produto" type="submit" value="Adicionar produto">
         </form>
     </main>
     
 
+    <article id="modal-login" class="modal-login-novoPro">
+        <div class="modal-novo-produto">
+            <img id="close-modal" src="../imagem/imagens-index/close.svg" alt="">
+            <h1>Olá, você não pode incluir produto se está deslogado</h1>
+            <h2>deseja logar ?</h2>
+            <button id="sim-button">sim</button>
+            <p>ou</p>
+            <button id="nao-button">não</button>
+        </div>
+    </article>
 
     <footer class="rodape">
 

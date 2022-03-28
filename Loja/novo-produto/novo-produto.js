@@ -73,4 +73,6 @@ function updateThumbnail(dropZoneElement, file) {
     }
 }
 
+
+
     

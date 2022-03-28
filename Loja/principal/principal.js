@@ -1,9 +1,10 @@
+
 var administrador = document.querySelector("#logado");
 let logado = localStorage.getItem("logado");
 
 console.log("Esta logado always ? " + logado);
 
-if(logado){
+if(logado == "true"){
     administrador.innerText = "Menu Administrador";
 }
 else{
@@ -45,9 +46,7 @@ function eraser(){
 setInterval(tempoAntigido, 1000*2);
 
 
-
-
-    function tempoAntigido(){
+function tempoAntigido(){
         
         if(contador == 1){
             eraser();
@@ -84,6 +83,5 @@ setInterval(tempoAntigido, 1000*2);
             contador = 0;
         }
         contador = contador + 1;
-    }
-
+}
 

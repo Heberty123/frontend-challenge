@@ -44,6 +44,30 @@
     color: var(--title-preto);
     font-size: 1.2rem;
     height: 62px;
+    transition: .2s;
+}
+
+.input-button-login:hover{
+    transition: .2s;
+    background-color: var(--title-blue-hover);
+}
+
+.box-erro-login{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--title-preto);
+}
+
+.box-erro-login h2{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.box-erro-login h3{
+    color: red;
+    display: inline-block;
 }
 
 .container-session-logado{

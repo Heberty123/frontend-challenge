@@ -2,6 +2,9 @@ var administrador = document.querySelector("#logado");
 var form_login = document.querySelector(".container-login");
 var section_logado = document.querySelector(".container-session-logado");
 var title_user = document.querySelector(".title-user-connect");
+var box_erro = document.querySelector(".box-erro-login");
+var box_erro_h2 = document.querySelector(".box-erro-login h2");
+var box_erro_h3 = document.querySelector(".box-erro-login h3");
 var button_deslogar = document.querySelector(".button-deslogar");
 var account = new Login();
 
@@ -18,19 +21,38 @@ function foiLogado(event){
     console.log("Vc digitou senha: " + senha);
     let login = account.logar(usuario, senha);
 
-    if(login){
+    if(login == true){
         /* deu certo login */
 
         administrador.innerText = "Menu Administrador";
         title_user.innerText = usuario;
-        localStorage.setItem("logado", true);
+        localStorage.setItem("logado", "true");
+        window.location.replace("file:///home/heberty/Documentos/Frontend-challenge/Loja/novo-produto/novo-produto.html");
+    }
+    else if(login == null){
 
+        box_erro.style.display = "block";
+        box_erro_h2.innerText = "Todos os campos estão";
+        box_erro_h3.innerText = "vazios";
+    }
+    else if(login == "usuario"){
 
+        box_erro.style.display = "block";
+        box_erro_h2.innerText = "campo usuário está";
+        box_erro_h3.innerText = "vazio"
+    }
+    else if(login == "senha"){
+
+        box_erro.style.display = "block";
+        box_erro_h2.innerText = "campo senha está";
+        box_erro_h3.innerText = "vazio"
     }
     else{
         /* Login inválido */
-
-        localStorage.setItem("logado", false);
+        box_erro.style.display = "block";
+        box_erro_h2.innerText = "usuário ou senha";
+        box_erro_h3.innerText = "inválido";
+        localStorage.setItem("logado", "false");
     }
 }
 
@@ -39,6 +61,7 @@ function foiLogado(event){
 
 function Deslogar(event){
     localStorage.removeItem("logado");
+    window.location.replace("file:///home/heberty/Documentos/Frontend-challenge/Loja/session/session.html");
 }
 
 
@@ -48,7 +71,7 @@ let logado = localStorage.getItem("logado");
 
 console.log("Esta logado always ? " + logado);
 
-if(logado){
+if(logado == "true"){
     administrador.innerText = "Menu Administrador";
     form_login.classList.add("form-login-none");
     section_logado.classList.add("logado-ativo");

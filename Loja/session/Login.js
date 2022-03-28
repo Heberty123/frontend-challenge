@@ -13,6 +13,18 @@ class Login{
 
             return true;
         }
+        else if((usuario == "" || usuario == null) && (senha == "" || senha == null)){
+
+            return null;
+        }
+        else if(usuario == "" || usuario == null){
+
+            return "usuario";
+        }
+        else if(senha == "" || senha == null){
+
+            return "senha";
+        }
         else{
             return false
         }
