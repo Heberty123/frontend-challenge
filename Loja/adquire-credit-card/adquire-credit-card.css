@@ -9,8 +9,12 @@
 }
 
 .data-card-adquire{
-    left: 220px;
+    left: 70px;
+    top: 163px;
+}
 
+.name-card-people{
+    top: 190px;
 }
 
 .credit-card-back{
@@ -72,7 +76,7 @@
     width: 100%;
     max-width: 600px;
     height: 400px;
-    background-color: aquamarine;
+    background-color: #75cada;
     border-radius: 6px;
     box-sizing: border-box;
     padding: 100px 10px 10px 10px;
@@ -87,17 +91,19 @@
     position: relative;
 }
 
-.card-campo-nome > label{
+.card-campo-nome > label, .card-campo-number > label, .card-campo-data-day > label, .card-campo-data-month > label, .card-campo-csv > label, .card-campo-style > label {
     position: absolute;
     top: 7px;
     left: 10px;
 }
 
-.card-campo-nome > input{
+.card-campo-nome > input, .card-campo-number > input, .card-campo-data-day > input, .card-campo-data-month > input, .card-campo-csv > input, .card-campo-style > input{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     padding: 20px 10px 5px 10px;
+    box-shadow: 0px 2px 0px var(--shadow-input-login);
+    border: none;
 }
 
 .card-campo-number{
@@ -105,91 +111,34 @@
     grid-column: span 3;
 }
 
-.card-campo-number > label{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.card-campo-number > input{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 10px 5px 10px;
-}
 
 .card-campo-data-day{
     position: relative;
 }
 
-.card-campo-data-day > label{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.card-campo-data-day > input{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 10px 5px 10px;
-}
 
 .card-campo-data-month{
     position: relative;
-}
-
-.card-campo-data-month > label{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.card-campo-data-month > input{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 10px 5px 10px;
 }
 
 .card-campo-csv{
     position: relative;
 }
 
-.card-campo-csv > label{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.card-campo-csv > input{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 10px 5px 10px;
-}
 
 .card-campo-style{
     position: relative;
 }
 
-.card-campo-style > label{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.card-campo-style > input{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 10px 5px 10px;
-}
 
 .form-card-submit{
+    font-size: 1.5rem;
+    color: var(--always-white);
     grid-column: span 3;
     width: 100%;
     box-sizing: border-box;
+    border: none;
+    background-color: var(--title-blue);
 }
 
 

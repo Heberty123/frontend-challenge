@@ -54,11 +54,46 @@
 
 .item h2{
     color: var(--title-item-produto);
+    transition: .17s;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.item > h2::before{
+    content: '';
+    width: 0px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #2A7AE4;
+    transition: .2s;
+    display: inline-block;
+}
+
+.item:hover > .t-iList::before{
+    width: 30px;
 }
 
 .item p{
     color: var(--title-item-produto);
     font-weight: 900;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.item p::before{
+    content: '';
+    width: 0px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #2A7AE4;
+    transition: .2s;
+    display: inline-block;
+}
+
+.item:hover > .p-p-Prod::before{
+    width: 20px;
 }
 
 .item a{

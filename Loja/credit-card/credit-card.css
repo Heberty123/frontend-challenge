@@ -33,6 +33,10 @@
     position: relative;
 }
 
+.container-digitacao{
+    margin-bottom: 10px;
+}
+
 .pre-box-info{
     display: inline-block;
     font-size: 1.5rem;
