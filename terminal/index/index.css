@@ -1,0 +1,245 @@
+body{
+    background-color: var(--back-blue-escuro); 
+}
+
+.grid{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 30px;
+    gap: 20px;
+}
+
+.cabecalho{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo{
+    color: var(--title-white);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.box-logo h1, div{
+    display: inline-block;
+}
+
+.box-logo{
+    flex: 1;
+    display: inline-block;
+}
+
+.barra-pesquisa{
+    flex: 3;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--input-barra-pesquisa);
+    padding: 20px;
+    color: var(--text-in-input);
+    box-sizing: border-box;
+}
+
+.barra-pesquisa::placeholder{
+    color: var(--text-in-input);
+    font-size: 1rem;
+}
+
+
+
+.box-login{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    color: var(--title-white);
+}
+
+.box-login img{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-esquerda h2{
+    color: var(--title-white);
+}
+
+.lista-nav li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.box-editor-codigo{
+    position: relative;
+}
+
+.box-editor-codigo::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../imagem/codigo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.box-comunidade{
+    position: relative;
+}
+
+.box-comunidade::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../imagem/pessoas-comunidade.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.terminal{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: var(--color-borda-terminal);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.terminal::after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-image: url("../imagem/buttons.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 40px;
+    top: 45px;
+}
+
+#fonte{
+    resize: none;
+    border-radius: 10px;
+    background-color: #141414;
+    color: var(--title-white);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 50px;
+}
+
+.principal button{
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    color: var(--text-in-input);;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--button-vizualizar-high);
+    margin-top: 20px;
+}
+
+.title-projto{
+    color: var(--title-white);
+    margin-bottom: 20px;
+}
+
+.nome-projeto{
+    margin-bottom: 15px;
+    background-color: var(--color-input-padrao);
+    width: 100%;
+    height: 56px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.nome-projeto::placeholder{
+    font-size: .9rem;
+    color: var(--text-in-input);
+}
+
+.descricao-projeto{
+    resize: none;
+    margin-bottom: 15px;
+    font-size: .8rem;
+    background-color: var(--color-input-padrao);
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.descricao-projeto::placeholder{
+    color: var(--text-in-input);
+}
+
+.title-personalizacao{
+    color: var(--title-white);
+    margin-top: 45px;
+    font-size: 1rem;
+}
+
+.personalizacao{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: .9rem;
+    background-color: var(--color-input-padrao);
+    color: var(--text-in-input);
+    width: 100%;
+    height: 56px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.cores-personalizacao{
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    width: 100%;
+    height: 56px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.salvar-projeto{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: var(--button-salvar-projeto);
+    border: none;
+    border-radius: 8px;
+}

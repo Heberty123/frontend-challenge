@@ -1,0 +1,11 @@
+:root{
+    --back-blue-escuro: #051d3b;
+    --input-barra-pesquisa: #2d415b;
+    --title-white: #FFFFFF;
+    --text-in-input: rgba(255, 255, 255, 1);
+    --color-borda-terminal: #6bd1ff;
+    --color-input-padrao: rgba(255, 255, 255, 0.16);
+    --button-vizualizar-high: rgba(80, 129, 251, 0.08);
+    --button-salvar-projeto: rgba(80, 129, 251, 1);
+
+}
