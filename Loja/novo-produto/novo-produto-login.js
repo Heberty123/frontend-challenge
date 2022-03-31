@@ -15,6 +15,58 @@ function submitFormProduto(event){
     
     if(localStorage.getItem("logado") == "true"){
 
+        /**  Quando Está Logado: faça operação do FORMULÁRIO SUBMIT      */
+
+        const url = `http://localhost:3000/profile`;
+        console.log(event.target);
+
+        let campo_file = document.querySelector("#novo-produto-campo-file");
+        let campo_nome = document.querySelector("#novo-produto-campo-name");
+        let campo_preco = document.querySelector("#novo-produto-campo-preco");
+        let campo_descricao = document.querySelector("#novo-produto-campo-descricao");  
+
+        let leia = (e) => {
+        const imagem_file = campo_file.files[0];
+       /* const formData = new FormData();    */
+
+
+            const criaCliente = (imagem, nome, preco , descricao) => { 
+                return fetch(url, {
+                    method: 'POST', 
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    },
+                    body: JSON.stringify({
+                        imagem: imagem,
+                        nome: nome,
+                        preco: preco,
+                        descricao: descricao
+                    })
+                })
+                .then( resposta => {
+                    return resposta.body
+                })
+            }
+
+            criaCliente(imagem_file, campo_nome.value, campo_preco.value, campo_descricao.value);
+            
+        }
+
+        /*
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            console.log(response);
+            });
+        };
+        */
+
+        
+
+        leia();
+
+
     }
     else{
         document.querySelector(".modal-login-novoPro").classList.add("mostrar");
