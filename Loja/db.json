@@ -1,21 +1,18 @@
 {
-  "profile": [
-    {
-      "nome": "felipe",
-      "preco": "60,00",
-      "descricao": "that's good",
-      "id": 1
-    },
-    {
-      "imagem": {},
-      "id": 2
-    },
-    {
-      "imagem": {},
-      "nome": "Yoguinha",
-      "preco": "150",
-      "descricao": "Baby Yoga",
-      "id": 3
-    }
-  ]
+   "Star Wars": [
+      {
+        "nome": "LOJA A",
+        "piso": "1",
+        "tel": "",
+        "desc": "descrição da loja.",
+        "imagem": "logo_a.jpg"
+      },
+      {
+        "nome": "LOJA B",
+        "piso": "1",
+        "tel": "",
+        "desc": "descrição da loja.",
+        "imagem": "logo_b.jpg"
+      }
+      ]
 }

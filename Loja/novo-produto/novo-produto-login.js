@@ -26,11 +26,9 @@ function submitFormProduto(event){
         let campo_descricao = document.querySelector("#novo-produto-campo-descricao");  
 
         let leia = (e) => {
-        const imagem_file = campo_file.files[0];
-       /* const formData = new FormData();    */
 
 
-            const criaCliente = (imagem, nome, preco , descricao) => { 
+            const criaCliente = (imagem, nome, preco, categoria, descricao) => { 
                 return fetch(url, {
                     method: 'POST', 
                     headers: {
@@ -40,6 +38,7 @@ function submitFormProduto(event){
                         imagem: imagem,
                         nome: nome,
                         preco: preco,
+                        categoria: categoria,
                         descricao: descricao
                     })
                 })
@@ -48,21 +47,10 @@ function submitFormProduto(event){
                 })
             }
 
-            criaCliente(imagem_file, campo_nome.value, campo_preco.value, campo_descricao.value);
+            criaCliente("fica sem", campo_nome.value, campo_preco.value, "ainda não tem categoria no campo", campo_descricao.value);
             
         }
 
-        /*
-        fetch(url, {
-            method: 'POST',
-            body: formData
-        }).then(response => {
-            console.log(response);
-            });
-        };
-        */
-
-        
 
         leia();
 
